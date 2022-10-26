@@ -1,0 +1,230 @@
+/* 
+    Author: Sazzad Hossain
+    version: 1.0
+    template Name: Scoreboard with custom codes
+    support: sazzad.dev21@gmail.com
+    Author Website: sazzaddev.com
+*/
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Global CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000d1e;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/*  */
+
+/* Header, Hero */
+
+.home_header {
+    background-color: #041935;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.logo {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.home_header .fb_icon{
+    width: 25px;
+}
+
+.hero {
+    background: url(images/hero_banner.jpg) no-repeat center / cover;
+    height: 320px;
+    border-radius: 10px 10px 0 0;
+}
+
+.hero h1 {
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 100px;
+}
+
+.hero_date {
+    background-color: #041935;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hero_date h2 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+/* Match List */
+
+.match_list {
+    background: #000d1e;
+    margin-bottom: 1rem;
+}
+
+.list-item {
+    background-color: #21416b;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 1rem;
+    transition: all 0.8s linear;
+}
+
+.list-item:hover {
+    background-color: #041935;
+}
+
+.item-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-top-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-top-middle {
+    flex: 1;
+    text-align: center;
+}
+
+.item-top-right {
+    flex: 1;
+}
+
+
+
+.star {
+    outline: none;
+    border: none;
+    width: 18px;
+    height: 18px;
+    background: url(images/star_white.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+/*  */
+
+.newstar {
+    background: url(images/star_golden.png);
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+    outline: none;
+    border: none;
+}
+
+/*  */
+
+.league {
+    font-size: 12px;
+    color: #acbed6;
+    margin-left: 1rem;
+}
+
+.item-top-middle a,
+.item-top-middle p{
+    font-size: 12px;
+    color: #fff;
+}
+
+.item-middle {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-1 {
+    flex: 1;
+    text-align: center;
+}
+
+.team-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.team-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-name {
+    margin-top: 5px;
+    letter-spacing: 1px;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.scores {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.watch {
+    width: 150px;
+}
+
+@media screen and (max-width: 767px) {
+
+    * {
+        font-size: 50%;
+    }
+
+    .star {
+        width: 35px;
+    }
+
+    .watch {
+        width: 100px;
+    }
+}
